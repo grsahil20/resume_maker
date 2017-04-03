@@ -1,0 +1,61 @@
+curl -H "Content-Type: application/json" -X POST -d '{
+    "resume" :
+        {
+        "profile" : {
+            "full_name": "Sahil Grover",
+            "email": "gr.sahil20@gmail.com",
+            "phone": "+60173587404",
+            "linkedin_url": "https://www.linkedin.com/in/grsahil20/",
+            "blog_url": "http://codesapling.com",
+            "dob" : "20 Jul, 1988",
+            "title" : "Lead ROR Developer specialised in Payments | Open for a challenging opportunity",
+            "description" : "I am a 28 year old programming language fanatic and love learning new programming languages. I am trying to find out what is really important to be a programmer, still learning the major parts of programming such as Architecture, Databases etc.."
+        },
+        "languages" : {
+            "0" : {"title" : "English","proficiency" : "Professional"},
+            "1" : { "title" : "Hindi", "proficiency" : "Native" },
+            "2" : {"title" : "Punjabi","proficiency" : "Spoken"}
+        },
+        "projects" : {
+            "0" : {
+                "title": "3Diligent",
+                "description": "3Diligent is committed to the business customer, networking the finest service providers and most advanced rapid manufacturing technologies. Many of our vendors carry formal quality certifications and we guarantee every order executed through our platform. We gather continuous feedback from our customers and vendors to optimize the 3Diligent user experience.",
+                "url": "http://3diligent.com/",
+                "start_date": "20 Oct, 2014",
+                "end_date": "20 Nov, 2015"
+            },
+            "1" : {
+                "title": "Launch Gator",
+                "description": "Free web service that helps you create awesome landing pages for your coming soon website. This service helps you set up basic yet vivid landing pages till your full fledged website shows up on your domain.",
+                "url": "launch.deskgator.com",
+                "start_date": "20 May, 2012",
+                "end_date": "20 Jun, 2012"
+            },
+            "2" : {
+                "title": "Emaillist.io",
+                "description": "You try to send a mass email? And maybe a few minutes later you realize you forgot someone. Then what? Send him again? We are tying to fix this problem with the new product ie EmailList.io, learnings from our previous product ie textadda.com. For FREE, you create an email address, such as myfriends@emailist.io, and then add up to 25 people to the recipient list. Now anytime you or any of the group members email myfriends@emailist.io, the email goes to everyone. Remember only people in the group can send an email to that address. So what are you waiting for. Signup and create a list and start sending emails ;)",
+                "url": "http://http://emaillist.io/",
+                "start_date": "20 Jan, 2013",
+                "end_date": "20 Feb, 2013"
+            }
+        },
+        "skills" : {
+            "0" : {"title": "ROR", "exp_level": "Expert"},
+            "1" : {"title": "Ruby",  "exp_level": "Expert"},
+            "2" : {"title": "Javascript"},
+            "3" : {"title": "HTML"},
+            "4" : {"title": "CSS"},
+            "5" : {"title": "HTML"}
+        },
+        "qualifications" : {
+            "0" : {"title": "B.Sc. (IT)", "school_name": "Global OPen Univerity"}
+        },
+        "companies" : {
+            "0" : {"title": "Fave", "url": "http://myfave.com",  "start_date": "20 Jul, 2016"},
+            "1" : {"title": "Grab On Rent", "url": "https://www.grabonrent.com",  "start_date": "20 Dec, 2015",  "end_date": "20 May, 2016"},
+            "2" : {"title" : "Lift Off LLc", "url": "http://www.liftoffllc.com",  "start_date": "20 Oct, 2014",  "end_date": "20 Nov, 2015"},
+            "3" : {"title": "HeaderLabs", "url": "http://headerlabs.com",  "start_date": "20 Sep, 2013",  "end_date": "20 Sep, 2014"},
+            "4" : {"title": "Fizzy Softwares Pvt. Ltd.", "url": "http://www.fizzysoftware.com",  "start_date": "20 Sep, 2011",  "end_date": "20 May, 2013"}
+        }
+    }
+}' http://localhost:3000/api/resumes
