@@ -7,12 +7,14 @@
       <ul class='extra_margin_top'>
         <% skills.each do |skill| %>
           <li class="skill">
-            <span class="inline_highlight"><%= skill.title %></span>
-              <% if skill.exp_level.present?  %>
+            <span class="inline_highlight">
+              <%= skill.title %>
+            </span>
+            <% if skill.exp_level.present?  %>
             <span>
               : <%= skill.exp_level.capitalize %>
             </span>
-              <% end %>
+            <% end %>
           </li>
         <% end %>
       </ul>

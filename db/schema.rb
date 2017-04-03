@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20170403075919) do
     t.string   "title"
     t.string   "url"
     t.string   "description"
-    t.string   "start_date"
-    t.string   "end_date"
+    t.date     "start_date"
+    t.date     "end_date"
     t.integer  "resume_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
@@ -51,8 +51,8 @@ ActiveRecord::Schema.define(version: 20170403075919) do
 
   create_table "languages", force: :cascade do |t|
     t.string   "title"
-    t.integer  "resume_id"
     t.string   "proficiency"
+    t.integer  "resume_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.index ["resume_id"], name: "index_languages_on_resume_id", using: :btree
