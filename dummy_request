@@ -58,4 +58,4 @@ curl -H "Content-Type: application/json" -X POST -d '{
             "4" : {"title": "Fizzy Softwares Pvt. Ltd.", "url": "http://www.fizzysoftware.com",  "start_date": "20 Sep, 2011",  "end_date": "20 May, 2013"}
         }
     }
-}' http://localhost:3000/api/resumes
+}' https://mv-resume.herokuapp.com/api/resumes
