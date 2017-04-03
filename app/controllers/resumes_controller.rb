@@ -1,7 +1,7 @@
 class ResumesController < ApplicationController
 
   def index
-    @resumes = Resume.page(params[:page])
+    @resumes = Resume.includes(:profile).page(params[:page])
   end
 
   def show
