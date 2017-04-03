@@ -1,0 +1,29 @@
+<% if projects.present? %>
+<div class='projects container col-md-12 seperator_blue_top'>
+  <div class="col-md-3">
+    <h3>Projects</h3>
+  </div>
+  <div class="seperator_blue_left col-md-9">
+    <ul>
+      <% projects.each do |project| %>
+      <li class="project">
+        <h4><%= project.title %></h4>
+        <p>
+          <% if project.url.present?  %>
+          <%= link_to project.url, project.url %>
+          <% end %>
+        </p>
+        <% if project.description %>
+        <p><%= project.description %></p>
+        <% end %>
+        <% if project.start_date.present? || project.end_date.present? %>
+        <p>
+          <%= rangify_dates(project.start_date,  project.end_date) %>
+        </p>
+        <% end %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+</div>

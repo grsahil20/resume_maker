@@ -1,0 +1,29 @@
+<div class="resume_container container">
+
+  <% profile = @resume.profile %>
+  <div class='resume_head'>
+    <h2 class="resume_title"><%= profile.full_name %></h2>
+    <h4 class="email"><%= mail_to profile.email %></h4>
+    <h4 class="phone"><%= profile.phone %></h4>
+    <% if profile.blog_url %>
+    <span class="blog_url"><%= link_to profile.blog_url, profile.blog_url , target: '_blank' %></span>
+    <% end %>
+  </div>
+
+  <div class="profile_details">
+  <% if profile.title %>
+  <h3><%= profile.title %></h3>
+  <% end %>
+  <% if profile.description %>
+  <p class='seperator_blue_top'><%= profile.description %></p>
+  <% end %>
+  </div>
+
+
+  <%= render 'shared/projects', projects: @resume.projects %>
+  <%= render 'shared/skills', skills: @resume.skills %>
+  <%= render 'shared/languages', languages: @resume.languages %>
+  <%= render 'shared/companies', companies: @resume.companies %>
+  <%= render 'shared/qualifications', qualifications: @resume.qualifications %>
+  <%= render 'shared/certifications', certifications: @resume.certifications %>
+</div>
