@@ -117,7 +117,7 @@ GEM
       pkg-config (~> 1.1.7)
     pg (0.18.4)
     pkg-config (1.1.7)
-    puma (3.4.0)
+    puma (3.12.6)
     rack (2.0.0.rc1)
       json
     rack-test (0.6.3)
@@ -206,7 +206,7 @@ DEPENDENCIES
   kaminari
   listen (~> 3.0.5)
   pg (~> 0.18)
-  puma (~> 3.0)
+  puma (~> 3.12)
   rails (>= 5.0.0.rc1, < 5.1)
   rails_config
   sass-rails (~> 5.0)
